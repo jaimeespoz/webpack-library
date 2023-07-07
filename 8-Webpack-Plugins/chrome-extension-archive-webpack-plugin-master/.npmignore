@@ -1,0 +1,12 @@
+.github/
+.vscode/
+.eslintcache
+.eslintignore
+.eslintrc.js
+.prettierignore
+.prettierrc
+*.config.js
+*.config.ts
+tsconfig.json
+coverage/
+src/

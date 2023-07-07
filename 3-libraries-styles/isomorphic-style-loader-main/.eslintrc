@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "airbnb",
+    "eslint-config-prettier"
+  ],
+  "rules": {
+    "no-continue": "off",
+    "no-plusplus": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off"
+  }
+}

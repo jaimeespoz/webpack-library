@@ -1,0 +1,19 @@
+﻿{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "sourceMap": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "webpack-env"
+    ]
+  },
+  "files": [
+    "Scripts/calculator-store.ts",
+    "Scripts/calculator.tsx",
+    "Scripts/index.tsx"
+  ]
+}

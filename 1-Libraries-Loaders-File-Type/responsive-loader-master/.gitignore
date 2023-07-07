@@ -1,0 +1,14 @@
+node_modules
+*.log
+test/build
+test/**/build/*.js
+test/**/build/**/*.png
+test/**/build/**/*.jpg
+test/**/build/**/*.avif
+test/**/build/**/*.jpeg
+test/**/build/**/*.webp
+.node-version
+lib
+.vscode
+.envrc
+.tool-versions

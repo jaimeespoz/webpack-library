@@ -1,0 +1,12 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "rules": {
+    "no-console": "off",
+    "no-unused-vars": ["error", { "args": "none" }],
+    "comma-dangle": "off",
+    "no-cond-assign": "off"
+  }
+}

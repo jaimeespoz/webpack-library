@@ -1,0 +1,29 @@
+{
+  "name": "@webpack-blocks/babel",
+  "version": "2.1.0",
+  "description": "Webpack block for babel 6+.",
+  "main": "lib/index",
+  "license": "MIT",
+  "author": "Andy Wermke <andy@dev.next-step-software.com>",
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-blocks"
+  ],
+  "repository": "andywer/webpack-blocks",
+  "bugs": "https://github.com/andywer/webpack-blocks/issues",
+  "dependencies": {
+    "babel-loader": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@webpack-blocks/core": "^2.1.0",
+    "webpack": "^4.20.2"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0",
+    "@webpack-blocks/core": "^2.0.0"
+  }
+}

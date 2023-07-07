@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.log
+yarn.lock
+dist
+lib
+types
+screenshots
+/test-results/
+/playwright-report/
+/playwright/.cache/

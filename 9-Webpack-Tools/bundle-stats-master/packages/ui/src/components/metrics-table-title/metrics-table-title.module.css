@@ -1,0 +1,41 @@
+.root {
+}
+
+.title {
+  color: var(--color-text-light);
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.anchor {
+  display: block;
+}
+
+.anchorIcon {
+  display: block;
+  margin: -2px 0; /* compensate for the vertical space */
+}
+
+.info {
+  font-size: var(--size-xsmall);
+  font-weight: normal;
+}
+
+.readMoreLink {
+  appearance: none;
+  background: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: var(--color-primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.readMoreLink:hover,
+.readMoreLink:active,
+.readMoreLink:focus {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}

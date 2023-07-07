@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    // "module": "nodenext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "newLine": "LF",
+    "allowSyntheticDefaultImports": true,
+
+    // `skipLibCheck` only for avoid bug of `svgo` v3.0.0
+    // see: https://github.com/svg/svgo/issues/1700
+    "skipLibCheck": true,
+
+    "outDir": "./types"
+  },
+  "include": ["./src/**/*"]
+}

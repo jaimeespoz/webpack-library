@@ -1,0 +1,52 @@
+{
+  "name": "layer-pack",
+  "version": "2.2.3",
+  "description": "Webpack plugin to make inheritable code layers, named glob imports, easy multi packages app & shared webpack configs",
+  "license": "MIT",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "bin": {
+    "lpack": "etc/cli/lpack",
+    "lpack-dev-server": "etc/cli/lpack-dev-server",
+    "lpack-init": "etc/cli/lpack-init",
+    "lpack-run": "etc/cli/lpack-run",
+    "lpack-setup": "etc/cli/lpack-setup"
+  },
+  "scripts": {
+    "lpack": "node etc/cli/lpack.js",
+    "lpack-dev-server": "node etc/cli/lpack-dev-server.js",
+    "lpack-init": "node etc/cli/lpack-init.js",
+    "lpack-run": "node etc/cli/lpack-run.js",
+    "lpack-setup": "node etc/cli/lpack-setup.js"
+  },
+  "author": "N8tz <n8tz.js@gmail.com>",
+  "maintainers": [
+    "Nathan Braun <n8tz.js@gmail.com>"
+  ],
+  "contributors": [
+    "N8tz (https://github.com/N8tz)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/layer-pack/layer-pack"
+  },
+  "peerDependencies": {
+    "webpack": ">=5.11.0",
+    "webpack-cli": ">=4.0.0"
+  },
+  "dependencies": {
+    "deep-extend": "^0.6.0",
+    "fast-glob": "^2.2.6",
+    "fs-extra": "^7.0.1",
+    "is": "^3.3.0",
+    "is-builtin-module": "^3.0.0",
+    "minimist": "^1.2.5",
+    "mustache": "^3.0.1",
+    "resolve": "^1.17.0",
+    "webpack-inject-plugin": "^1.5.4",
+    "webpack-merge": "^4.2.2",
+    "webpack-virtual-modules": "^0.4.1"
+  }
+}

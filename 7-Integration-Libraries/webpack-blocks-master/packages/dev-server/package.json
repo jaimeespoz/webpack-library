@@ -1,0 +1,24 @@
+{
+  "name": "@webpack-blocks/dev-server",
+  "version": "2.1.0",
+  "description": "Webpack block for the webpack dev server.",
+  "main": "lib/index",
+  "license": "MIT",
+  "author": "Andy Wermke <andy@dev.next-step-software.com>",
+  "engines": {
+    "node": ">= 6.11.5"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-blocks"
+  ],
+  "repository": "andywer/webpack-blocks",
+  "bugs": "https://github.com/andywer/webpack-blocks/issues",
+  "dependencies": {
+    "webpack": "^4.42.1",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "peerDependencies": {
+    "@webpack-blocks/core": "^2.0.0"
+  }
+}

@@ -1,0 +1,31 @@
+.assetNameTag {
+  color: var(--color-background);
+}
+
+.assetNameTag:hover,
+.assetNameTag:active,
+.assetNameTag:focus {
+  color: var(--color-background);
+}
+
+.assetNameTagEntry {
+  background: var(--color-info-dark);
+}
+
+.assetNameTagInitial {
+  background: var(--color-info);
+}
+
+.assetNameTagChunk {
+  background: var(--color-info-light);
+}
+
+.label {
+  display: inline-block;
+  min-width: 6em;
+}
+
+.label::after {
+  content: ' ';
+}
+

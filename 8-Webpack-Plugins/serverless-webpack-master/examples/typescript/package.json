@@ -1,0 +1,24 @@
+{
+  "name": "serverless-webpack-typescript-example",
+  "version": "1.0.0",
+  "description": "Serverless webpack example using Typescript",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicola Peduzzi <thenikso@gmail.com> (http://nikso.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "fork-ts-checker-webpack-plugin": "^5.0.12",
+    "serverless": "^3.25.1",
+    "serverless-offline": "^12.0.2",
+    "serverless-webpack": "file:../../",
+    "typescript": "^3.9.7",
+    "webpack": "^5.76.0",
+    "webpack-node-externals": "^2.5.0"
+  }
+}

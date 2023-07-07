@@ -1,0 +1,11 @@
+.eslintignore
+.eslintrc.js
+__mocks__
+jest.config.js
+jsconfig.json
+tsconfig.*
+build
+scripts
+src/prototypes
+**/*.stories.jsx
+__snapshots__

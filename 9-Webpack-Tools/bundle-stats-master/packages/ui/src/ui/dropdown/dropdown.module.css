@@ -1,0 +1,83 @@
+.root {
+  display: inline-block;
+}
+
+.button {
+  background: none;
+  border: none;
+  padding: 0;
+
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-small);
+  padding: calc(var(--space-xxsmall) - 1px);
+
+  background: none;
+  font-size: var(--size-small);
+  line-height: var(--space-small);
+  white-space: nowrap;
+  appearance: none;
+  cursor: pointer;
+  color: var(--color-text-light);
+}
+
+.button[aria-expanded=true],
+.button:hover,
+.button:focus,
+.button:active {
+  outline: none;
+  box-shadow: var(--outline-hover);
+  color: var(--color-text);
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-layer-high);
+  background: var(--color-background);
+  min-width: 12em;
+  z-index: var(--layer-high);
+  padding: var(--space-xxxsmall);
+}
+
+.dropdown:focus {
+  outline: none;
+}
+
+.item {
+  display: block;
+  appearance: none;
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  border: 0;
+  border-radius: var(--radius-small);
+  padding: calc(var(--space-xxxsmall) / 2) var(--space-xxxsmall);
+  background: none;
+  text-align: left;
+  color: var(--color-text-light);
+  font-size: var(--size-small);
+  line-height: inherit;
+  text-decoration: none;
+}
+
+.item[data-active-item],
+.item:hover,
+.item:focus,
+.item:active {
+  background: var(--color-highlight);
+  color: var(--color-text);
+}
+
+.itemActive {
+  background: var(--color-highlight-info);
+  color: var(--color-primary);
+}
+
+.itemActive:hover,
+.itemActive:focus,
+.itemActive:active {
+  background: var(--color-highlight-info);
+  color: var(--color-primary-dark);
+}

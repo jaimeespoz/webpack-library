@@ -1,0 +1,12 @@
+node_modules
+node_modules.nosync
+dist
+.webpack
+.serverless
+coverage
+
+.idea
+/.nyc_output
+.history
+/.vscode
+.DS_Store

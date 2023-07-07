@@ -1,0 +1,48 @@
+{
+  "name": "chrome-extension-archive-webpack-plugin",
+  "version": "0.1.13",
+  "description": "Chrome Extension archive plugin for Webpack",
+  "main": "./dist/chrome-extension-archive-webpack-plugin.js",
+  "types": "./dist/chrome-extension-archive-webpack-plugin.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint --cache . --ext .js,.ts",
+    "format": "eslint --fix --cache . --ext .js,.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/KeisukeYamashita/chrome-extension-archive-webpack-plugin"
+  },
+  "keywords": [
+    "obfuscation",
+    "webpack",
+    "plugin"
+  ],
+  "author": "KeisukeYamashita <19yamashita15@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/archiver": "^5.1.1",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.2",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^27.2.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-typescript": "^7.0.0-alpha.19",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "temp-sandbox": "^4.0.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "archiver": "^5.3.0",
+    "schema-utils": "^3.1.1",
+    "webpack": "^5.56.0"
+  }
+}

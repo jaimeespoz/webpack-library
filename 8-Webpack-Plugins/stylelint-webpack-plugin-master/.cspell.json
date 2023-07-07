@@ -1,0 +1,29 @@
+{
+  "version": "0.2",
+  "language": "en,en-gb",
+  "words": [
+    "commitlint",
+    "stylelint",
+    "Stylelint",
+    "stylelint's",
+    "Autofixing",
+    "globby",
+    "arrify",
+    "stylelintrc",
+    "badstylelintrc",
+    "indentifies",
+    "stylelintignore",
+    "notcss",
+    "stylelintcache"
+  ],
+
+  "ignorePaths": [
+    "CHANGELOG.md",
+    "package.json",
+    "coverage/**",
+    "dist/**",
+    "**/__snapshots__/**",
+    "package-lock.json",
+    "/test/output"
+  ]
+}

@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - 10
+  - 8
+  - 6
+git:
+  depth: 5
+cache:
+  directories:
+    - node_modules
+before_install:
+  - npm config set depth 0
+install:
+  - npm install prepack
+  - npm install
+script:
+  - npm run lint
+  - npm run test
+  - npm run build
+  - nyc --silent npm run test
+  - nyc report --reporter=text-lcov | coveralls
+after_success:
+  - npm run build
+  - semantic-release
+notifications:
+  email: false
+sudo: false

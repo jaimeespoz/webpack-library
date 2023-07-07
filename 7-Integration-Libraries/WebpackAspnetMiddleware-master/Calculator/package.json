@@ -1,0 +1,30 @@
+{
+  "name": "calculator",
+  "version": "1.2.3",
+  "scripts": {
+    "clean": "rimraf ./Scripts/**/*.js",
+    "compile": "tsc",
+    "build": "webpack --env=production",
+    "watch": "webpack -w"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "16.4.14",
+    "@types/react-dom": "^16.0.8",
+    "@types/webpack-env": "^1.13.6",
+    "awesome-typescript-loader": "^5.0.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "react-hot-loader": "^3.1.1",
+    "style-loader": "^0.23.0",
+    "typescript": "^3.1.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.20.2",
+    "webpack-aspnet-middleware": "^2.3.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-notifier": "^1.6.0"
+  }
+}

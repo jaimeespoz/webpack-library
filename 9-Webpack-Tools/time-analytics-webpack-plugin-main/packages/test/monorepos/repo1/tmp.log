@@ -1,0 +1,10 @@
+
+┌── time-analytics-webpack-plugin
+│ Webpack compile takes 153.4815 ms
+├── Plugins
+│ Plugin TerserPlugin takes 213.1093 ms
+│ Plugin MiniCssExtractPlugin takes 0.5142 ms
+│ Plugin DefinePlugin takes 0.0364 ms
+│ All plugins take 213.6599 ms
+├── Loaders
+│ All loaders take 0.0000 ms

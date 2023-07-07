@@ -1,0 +1,37 @@
+{
+  "name": "webpack-split-by-path",
+  "version": "3.0.0",
+  "description": "Split a Webpack entry bundle into any number of arbitrarily defined smaller bundles",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BohdanTkachenko/webpack-split-by-path.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin"
+  ],
+  "author": {
+    "name": "Bohdan Tkachenko",
+    "email": "bohdan@tkachenko.io",
+    "url": "http://BohdanTkachenko.com"
+  },
+  "contributors": [
+    "SoundCloud, Nick Fisher",
+    "Norbert de Langen"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BohdanTkachenko/webpack-split-by-path/issues"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/webpack --config example/webpack.config.js"
+  },
+  "homepage": "https://github.com/BohdanTkachenko/webpack-split-by-path",
+  "devDependencies": {
+    "webpack": "^3.0.0",
+    "css-loader": "^0.28.0",
+    "react": "^15.3.2",
+    "style-loader": "^0.18.0"
+  }
+}

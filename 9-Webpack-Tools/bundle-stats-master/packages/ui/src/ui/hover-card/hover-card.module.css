@@ -1,0 +1,29 @@
+.root {
+  display: inline-block;
+}
+
+.anchor {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.anchor:hover {
+  color: var(--color-primary);
+}
+
+.anchor:focus {
+  outline: 0;
+}
+
+.hoverCard {
+  padding: var(--space-xsmall) var(--space-small);
+  border-radius: var(--radius-medium);
+  width: calc(100vw - 2 * var(--space-small));
+  max-width: 340px;
+  outline: none;
+  filter: drop-shadow(var(--shadow-layer-high));
+  will-change: filter;
+  background: var(--color-light);
+  font-size: var(--size-small);
+}

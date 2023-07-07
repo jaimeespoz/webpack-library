@@ -1,0 +1,32 @@
+{
+  "name": "@webpack-blocks/core",
+  "version": "2.1.0",
+  "description": "Functional approach to compose your webpack config.",
+  "main": "lib/index",
+  "license": "MIT",
+  "author": "Andy Wermke <andy@dev.next-step-software.com>",
+  "keywords": [
+    "webpack",
+    "webpack-blocks",
+    "block",
+    "feature",
+    "functional"
+  ],
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "repository": "andywer/webpack-blocks",
+  "bugs": "https://github.com/andywer/webpack-blocks/issues",
+  "dependencies": {
+    "glob-to-regexp": "^0.4.1",
+    "lodash": "^4.17.15",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {
+    "sinon": "^6.3.5",
+    "webpack": "^4.20.2"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0"
+  }
+}

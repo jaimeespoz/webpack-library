@@ -1,0 +1,14 @@
+{
+    "jestrunner.debugOptions": {
+        // "resolveSourceMapLocations": [
+        //     "${workspaceFolder}/**",
+        //     // "**/node_modules/**"
+        // ],
+        "outFiles": [
+            "${workspaceFolder}/**/*.js",
+            // "!**/node_modules/**"
+        ],
+        "sourceMaps": true,
+    },
+    "mochaExplorer.cwd": "./packages/test"
+}

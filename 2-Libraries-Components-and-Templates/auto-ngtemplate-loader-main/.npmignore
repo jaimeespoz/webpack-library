@@ -1,0 +1,16 @@
+examples/**
+.github/**
+.husky/**
+design/**/*
+src/**/*.spec.js
+src/testdata.js
+.babelrc
+.eslintrc.json
+.eslintignore
+.prettierrc
+.nvmrc
+.travis.yml
+webpack.base.config.js
+yarn.lock
+CODE_OF_CONDUCT.md
+SECURITY.md

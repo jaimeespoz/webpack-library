@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`"minRatio" option matches snapshot for \`0\` value ({Number}): assets 1`] = `
+[
+  [
+    "09a1a1112c577c2794359715edfcb5ac.png",
+    78117,
+    {
+      "immutable": true,
+      "size": 78117,
+      "sourceFilename": "icon.png",
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg",
+    672,
+    {
+      "immutable": true,
+      "size": 672,
+      "sourceFilename": "icon.svg",
+    },
+  ],
+  [
+    "async.async.55e6e9a872bcc7d4b226.js",
+    194,
+    {
+      "chunkhash": "55e6e9a872bcc7d4b226",
+      "immutable": true,
+      "javascriptModule": false,
+      "size": 194,
+    },
+  ],
+  [
+    "main.886cd1a733e4ad7fc29d.js",
+    16088,
+    {
+      "chunkhash": "886cd1a733e4ad7fc29d",
+      "immutable": true,
+      "javascriptModule": false,
+      "size": 16088,
+    },
+  ],
+]
+`;
+
+exports[`"minRatio" option matches snapshot for \`0\` value ({Number}): errors 1`] = `[]`;
+
+exports[`"minRatio" option matches snapshot for \`0\` value ({Number}): warnings 1`] = `[]`;
+
+exports[`"minRatio" option matches snapshot for \`1\` value ({Number}): assets 1`] = `
+[
+  [
+    "09a1a1112c577c2794359715edfcb5ac.png",
+    78117,
+    {
+      "immutable": true,
+      "related": {
+        "gzipped": "09a1a1112c577c2794359715edfcb5ac.png.gz",
+      },
+      "size": 78117,
+      "sourceFilename": "icon.png",
+    },
+  ],
+  [
+    "09a1a1112c577c2794359715edfcb5ac.png.gz",
+    73160,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 73160,
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg",
+    672,
+    {
+      "immutable": true,
+      "related": {
+        "gzipped": "23fc1d3ac606d117e05a140e0de79806.svg.gz",
+      },
+      "size": 672,
+      "sourceFilename": "icon.svg",
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg.gz",
+    393,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 393,
+    },
+  ],
+  [
+    "async.async.55e6e9a872bcc7d4b226.js",
+    194,
+    {
+      "chunkhash": "55e6e9a872bcc7d4b226",
+      "immutable": true,
+      "javascriptModule": false,
+      "related": {
+        "gzipped": "async.async.55e6e9a872bcc7d4b226.js.gz",
+      },
+      "size": 194,
+    },
+  ],
+  [
+    "async.async.55e6e9a872bcc7d4b226.js.gz",
+    134,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 134,
+    },
+  ],
+  [
+    "main.886cd1a733e4ad7fc29d.js",
+    16088,
+    {
+      "chunkhash": "886cd1a733e4ad7fc29d",
+      "immutable": true,
+      "javascriptModule": false,
+      "related": {
+        "gzipped": "main.886cd1a733e4ad7fc29d.js.gz",
+      },
+      "size": 16088,
+    },
+  ],
+  [
+    "main.886cd1a733e4ad7fc29d.js.gz",
+    4024,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 4024,
+    },
+  ],
+]
+`;
+
+exports[`"minRatio" option matches snapshot for \`1\` value ({Number}): errors 1`] = `[]`;
+
+exports[`"minRatio" option matches snapshot for \`1\` value ({Number}): warnings 1`] = `[]`;

@@ -1,0 +1,36 @@
+.root {
+  position: relative;
+  color: inherit;
+  line-height: inherit;
+}
+
+.root:focus,
+.root:active,
+.root:hover {
+  outline: none;
+}
+
+.tooltip {
+  padding: var(--space-xxxsmall) var(--space-xxsmall);
+  border-radius: var(--radius-small);
+  background: var(--color-light);
+  max-width: 24em;
+  color: var(--color-text);
+  filter: drop-shadow(var(--shadow-layer));
+  will-change: filter;
+  font-size: var(--size-xsmall);
+}
+
+.arrow svg {
+  display: block;
+  fill: var(--color-light);
+}
+
+.tooltipDarkMode {
+  background: var(--color-text-dark);
+  color: var(--color-light);
+}
+
+.tooltipDarkMode .arrow svg {
+  fill: var(--color-text-dark);
+}

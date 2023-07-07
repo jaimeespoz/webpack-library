@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`plugin .install should call .install 1`] = `
+Array [
+  Array [
+    "babel-loader",
+    Object {
+      "dependencies": Object {
+        "peer": true,
+      },
+      "packageManager": Object {
+        "options": Object {
+          "dev": true,
+        },
+        "type": "npm",
+      },
+      "prompt": true,
+    },
+    WebpackLogger {
+      "getChildLogger": [Function],
+      Symbol(webpack logger raw log method): [Function],
+    },
+  ],
+]
+`;
+
+exports[`plugin .resolveExternal should resolve external deps 1`] = `
+Array [
+  "express",
+  Object {
+    "dependencies": Object {
+      "peer": true,
+    },
+    "packageManager": "npm",
+    "prompt": true,
+  },
+  WebpackLogger {
+    "getChildLogger": [Function],
+    Symbol(webpack logger raw log method): [Function],
+  },
+]
+`;

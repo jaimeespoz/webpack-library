@@ -1,0 +1,20 @@
+.root {
+  font-family: var(--font-family-fixed);
+}
+
+.displayUnit {
+  font-size: var(--size-small);
+}
+
+.content {
+  font-size: var(--size-small);
+}
+
+.inline .display {
+  display: inline-block;
+}
+
+.inline .content {
+  display: inline-block;
+  margin: 0 0 0 var(--space-xxxsmall);
+}

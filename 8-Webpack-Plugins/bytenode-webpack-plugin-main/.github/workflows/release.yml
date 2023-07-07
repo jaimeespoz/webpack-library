@@ -1,0 +1,43 @@
+name: release
+
+on:
+  workflow_dispatch:
+
+env:
+  node: 18
+
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        task:
+          - build
+          - lint
+          - test
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: ${{ env.node }}
+      - run: npm ci
+      - run: npm run ${{ matrix.task }}
+  release:
+    needs: task
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ github.token }}
+      - uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: ${{ env.node }}
+      - run: npm ci
+      - run: npm run build
+      - run: npm run release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

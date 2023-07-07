@@ -1,0 +1,11 @@
+.eslintrc.js
+
+**/.webpack/
+**/coverage/
+**/dist/
+**/lib/
+**/node_modules/
+**/out/
+**/output/
+
+**/examples/

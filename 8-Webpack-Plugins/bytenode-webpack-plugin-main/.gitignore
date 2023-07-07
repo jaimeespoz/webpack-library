@@ -1,0 +1,15 @@
+*.debug
+*.eslintcache
+*.log
+*.tsbuildinfo
+
+.idea/
+.vscode/
+
+**/.webpack/
+**/coverage/
+**/dist/
+**/lib/
+**/node_modules/
+**/out/
+**/output/

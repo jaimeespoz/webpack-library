@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.project.json",
+  "include": [
+    "jest.config.ts",
+    "src",
+    "test"
+  ],
+  "exclude": [
+    "examples",
+    "lib"
+  ]
+}

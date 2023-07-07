@@ -1,0 +1,373 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`"deleteOriginalAssets" option should delete original assets and keep source maps with option "keep-source-map": assets 1`] = `
+[
+  [
+    "09a1a1112c577c2794359715edfcb5ac.png",
+    78117,
+    {
+      "immutable": true,
+      "size": 78117,
+      "sourceFilename": "icon.png",
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg",
+    393,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 393,
+    },
+  ],
+  [
+    "async.async.5ea58b5a4311bcf28d3b.js",
+    134,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 134,
+    },
+  ],
+  [
+    "main.086975de490b16164c63.js",
+    4068,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 4068,
+    },
+  ],
+  [
+    "main.086975de490b16164c63.js.map",
+    13093,
+    {
+      "development": true,
+      "size": 13093,
+    },
+  ],
+]
+`;
+
+exports[`"deleteOriginalAssets" option should delete original assets and keep source maps with option "keep-source-map": errors 1`] = `[]`;
+
+exports[`"deleteOriginalAssets" option should delete original assets and keep source maps with option "keep-source-map": warnings 1`] = `[]`;
+
+exports[`"deleteOriginalAssets" option should work and delete original assets: assets 1`] = `
+[
+  [
+    "09a1a1112c577c2794359715edfcb5ac.png.gz",
+    73160,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 73160,
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg.gz",
+    393,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 393,
+    },
+  ],
+  [
+    "async.async.55e6e9a872bcc7d4b226.js.gz",
+    134,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 134,
+    },
+  ],
+  [
+    "main.886cd1a733e4ad7fc29d.js.gz",
+    4024,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 4024,
+    },
+  ],
+]
+`;
+
+exports[`"deleteOriginalAssets" option should work and delete original assets: errors 1`] = `[]`;
+
+exports[`"deleteOriginalAssets" option should work and delete original assets: warnings 1`] = `[]`;
+
+exports[`"deleteOriginalAssets" option should work and do not report errors on duplicate assets when original assets were removed: assets 1`] = `
+[
+  [
+    "09a1a1112c577c2794359715edfcb5ac.png",
+    78117,
+    {
+      "immutable": true,
+      "size": 78117,
+      "sourceFilename": "icon.png",
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg",
+    393,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 393,
+    },
+  ],
+  [
+    "async.async.55e6e9a872bcc7d4b226.js",
+    134,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 134,
+    },
+  ],
+  [
+    "main.886cd1a733e4ad7fc29d.js",
+    4024,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 4024,
+    },
+  ],
+]
+`;
+
+exports[`"deleteOriginalAssets" option should work and do not report errors on duplicate assets when original assets were removed: errors 1`] = `[]`;
+
+exports[`"deleteOriginalAssets" option should work and do not report errors on duplicate assets when original assets were removed: warnings 1`] = `[]`;
+
+exports[`"deleteOriginalAssets" option should work and keep original assets by default: assets 1`] = `
+[
+  [
+    "09a1a1112c577c2794359715edfcb5ac.png",
+    78117,
+    {
+      "immutable": true,
+      "size": 78117,
+      "sourceFilename": "icon.png",
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg",
+    672,
+    {
+      "immutable": true,
+      "related": {
+        "gzipped": "23fc1d3ac606d117e05a140e0de79806.svg.gz",
+      },
+      "size": 672,
+      "sourceFilename": "icon.svg",
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg.gz",
+    393,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 393,
+    },
+  ],
+  [
+    "async.async.55e6e9a872bcc7d4b226.js",
+    194,
+    {
+      "chunkhash": "55e6e9a872bcc7d4b226",
+      "immutable": true,
+      "javascriptModule": false,
+      "related": {
+        "gzipped": "async.async.55e6e9a872bcc7d4b226.js.gz",
+      },
+      "size": 194,
+    },
+  ],
+  [
+    "async.async.55e6e9a872bcc7d4b226.js.gz",
+    134,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 134,
+    },
+  ],
+  [
+    "main.886cd1a733e4ad7fc29d.js",
+    16088,
+    {
+      "chunkhash": "886cd1a733e4ad7fc29d",
+      "immutable": true,
+      "javascriptModule": false,
+      "related": {
+        "gzipped": "main.886cd1a733e4ad7fc29d.js.gz",
+      },
+      "size": 16088,
+    },
+  ],
+  [
+    "main.886cd1a733e4ad7fc29d.js.gz",
+    4024,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 4024,
+    },
+  ],
+]
+`;
+
+exports[`"deleteOriginalAssets" option should work and keep original assets by default: errors 1`] = `[]`;
+
+exports[`"deleteOriginalAssets" option should work and keep original assets by default: warnings 1`] = `[]`;
+
+exports[`"deleteOriginalAssets" option should work and keep original assets: assets 1`] = `
+[
+  [
+    "09a1a1112c577c2794359715edfcb5ac.png",
+    78117,
+    {
+      "immutable": true,
+      "related": {
+        "gzipped": "09a1a1112c577c2794359715edfcb5ac.png.gz",
+      },
+      "size": 78117,
+      "sourceFilename": "icon.png",
+    },
+  ],
+  [
+    "09a1a1112c577c2794359715edfcb5ac.png.gz",
+    73160,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 73160,
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg",
+    672,
+    {
+      "immutable": true,
+      "related": {
+        "gzipped": "23fc1d3ac606d117e05a140e0de79806.svg.gz",
+      },
+      "size": 672,
+      "sourceFilename": "icon.svg",
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg.gz",
+    393,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 393,
+    },
+  ],
+  [
+    "async.async.55e6e9a872bcc7d4b226.js",
+    194,
+    {
+      "chunkhash": "55e6e9a872bcc7d4b226",
+      "immutable": true,
+      "javascriptModule": false,
+      "related": {
+        "gzipped": "async.async.55e6e9a872bcc7d4b226.js.gz",
+      },
+      "size": 194,
+    },
+  ],
+  [
+    "async.async.55e6e9a872bcc7d4b226.js.gz",
+    134,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 134,
+    },
+  ],
+  [
+    "main.886cd1a733e4ad7fc29d.js",
+    16088,
+    {
+      "chunkhash": "886cd1a733e4ad7fc29d",
+      "immutable": true,
+      "javascriptModule": false,
+      "related": {
+        "gzipped": "main.886cd1a733e4ad7fc29d.js.gz",
+      },
+      "size": 16088,
+    },
+  ],
+  [
+    "main.886cd1a733e4ad7fc29d.js.gz",
+    4024,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 4024,
+    },
+  ],
+]
+`;
+
+exports[`"deleteOriginalAssets" option should work and keep original assets: errors 1`] = `[]`;
+
+exports[`"deleteOriginalAssets" option should work and keep original assets: warnings 1`] = `[]`;
+
+exports[`"deleteOriginalAssets" option should work and report errors on duplicate assets: assets 1`] = `
+[
+  [
+    "09a1a1112c577c2794359715edfcb5ac.png",
+    78117,
+    {
+      "immutable": true,
+      "size": 78117,
+      "sourceFilename": "icon.png",
+    },
+  ],
+  [
+    "23fc1d3ac606d117e05a140e0de79806.svg",
+    393,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 393,
+    },
+  ],
+  [
+    "async.async.55e6e9a872bcc7d4b226.js",
+    134,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 134,
+    },
+  ],
+  [
+    "main.886cd1a733e4ad7fc29d.js",
+    4024,
+    {
+      "compressed": true,
+      "immutable": true,
+      "size": 4024,
+    },
+  ],
+]
+`;
+
+exports[`"deleteOriginalAssets" option should work and report errors on duplicate assets: errors 1`] = `
+[
+  "Error: Conflict: Multiple assets emit different content to the same filename 23fc1d3ac606d117e05a140e0de79806.svg",
+  "Error: Conflict: Multiple assets emit different content to the same filename async.async.55e6e9a872bcc7d4b226.js",
+  "Error: Conflict: Multiple assets emit different content to the same filename main.886cd1a733e4ad7fc29d.js",
+]
+`;
+
+exports[`"deleteOriginalAssets" option should work and report errors on duplicate assets: warnings 1`] = `[]`;

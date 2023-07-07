@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "newLine": "LF",
+    "sourceMap": false,
+    "types": [
+      "node",
+      "fs-extra",
+      "mocha"
+    ],
+    "lib": [
+      "es2015"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

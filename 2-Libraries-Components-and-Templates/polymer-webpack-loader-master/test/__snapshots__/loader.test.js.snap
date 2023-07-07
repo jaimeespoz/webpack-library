@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loader can process basic input 1`] = `"class Foo {}"`;
+
+exports[`loader can process without options 1`] = `"class Foo {}"`;
+
+exports[`loader full components basic element 1`] = `
+"
+import format from 'date-fns/format';
+import {PolymerElement, html} from '@polymer/polymer/polymer-element.js';  
+
+class MyElement extends PolymerElement {
+  static get is() { return 'my-element'; }
+  static get template() {
+    return html\`<h1>Hello, World!</h1>\`;
+  }
+}
+
+window.customElements.define(MyElement.is, MyElement);
+"
+`;
+
+exports[`loader full components html tagged references on same line 1`] = `
+"
+import format from 'date-fns/format';
+import {PolymerElement, html} from '@polymer/polymer/polymer-element.js';  
+
+class MyElement extends PolymerElement {
+  static get is() { return 'my-element'; }
+  static get styles() {
+    return html\`<style>*{background-color:pink}</style>\`;
+  }
+  static get template() {
+    return html\`<h1>Hello, World!</h1>\` && html\`\${MyElement.styles}\`;
+  }
+}
+
+window.customElements.define(MyElement.is, MyElement);
+"
+`;
+
+exports[`loader full components multiple template methods 1`] = `
+"
+import format from 'date-fns/format';
+import {PolymerElement, html} from '@polymer/polymer/polymer-element.js';  
+
+class MyElement extends PolymerElement {
+  static get is() { return 'my-element'; }
+  static get properties() {
+    return {
+      today: {
+        type: String,
+        value: function() {
+          return format(new Date(), 'MM/DD/YYYY');
+        }
+      }
+    }
+  }
+  static get styles() {
+    return html\`<style>h1{background-color:pink;background-image:url('\${__createTemplateFromString(require(\\"./foo.jpg\\"))}')}</style>\`;
+  }
+  static get template() {
+    return html\`\${MyElement.styles} <h1> Hello, World! It's [[today]]. </h1>\`;
+  }
+}
+
+window.customElements.define(MyElement.is, MyElement);
+
+function __createTemplateFromString(a) {
+  const template = /** @type {!HTMLTemplateElement} */(document.createElement('template'));
+  template.content.appendChild(document.createTextNode(a));
+  return template;
+}
+"
+`;
+
+exports[`loader full components source maps account for escaped backtick 1`] = `
+"
+import format from 'date-fns/format';
+import {PolymerElement, html} from '@polymer/polymer/polymer-element.js';  
+
+class MyElement extends PolymerElement {
+  static get is() { return 'my-element'; }
+  static get styles() {
+    return html\`<style>*{background-color:pink}</style>\`;
+  }
+  static get template() {
+    return html\`foo\\\\\\\\\\\\\`s\${MyElement.styles}\`;
+  }
+}
+
+window.customElements.define(MyElement.is, MyElement);
+"
+`;
+
+exports[`loader html-loader html is minimized when option is set 1`] = `
+"import {PolymerElement, html} from \\"@polymer/polymer/polymer-element.js\\";
+
+class FooElement extends PolymerElement {
+  static get is() { return \\"foo-element\\"; }
+  static get template() { return html\`<div id=\\"foo\\"> some text </div>\`; }
+}
+customElements.define(FooElement.is, FooElement);
+"
+`;
+
+exports[`loader html-loader image sources are replaced with require calls 1`] = `
+"import {PolymerElement, html} from \\"@polymer/polymer/polymer-element.js\\";
+
+class FooElement extends PolymerElement {
+  static get is() { return \\"foo-element\\"; }
+  static get template() { return html\`<img src=\\"\${__createTemplateFromString(require('./foo.jpg'))}\\" />\`; }
+}
+customElements.define(FooElement.is, FooElement);
+
+function __createTemplateFromString(a) {
+  const template = /** @type {!HTMLTemplateElement} */(document.createElement('template'));
+  template.content.appendChild(document.createTextNode(a));
+  return template;
+}
+"
+`;
+
+exports[`loader styles @import statements are processed 1`] = `
+"import {PolymerElement, html} from \\"@polymer/polymer/polymer-element.js\\";
+
+class FooElement extends PolymerElement {
+  static get is() { return \\"foo-element\\"; }
+  static get template() { return html\`<style>@import url('\${__createTemplateFromString(require(\\"./other.css\\"))}'); * {background-image: url('\${__createTemplateFromString(require(\\"./foo.jpg\\"))}');}</style>\`; }
+}
+customElements.define(FooElement.is, FooElement);
+
+function __createTemplateFromString(a) {
+  const template = /** @type {!HTMLTemplateElement} */(document.createElement('template'));
+  template.content.appendChild(document.createTextNode(a));
+  return template;
+}
+"
+`;
+
+exports[`loader styles font url() are properly formatted 1`] = `
+"import {PolymerElement, html} from \\"@polymer/polymer/polymer-element.js\\";
+
+class FooElement extends PolymerElement {
+  static get is() { return \\"foo-element\\"; }
+  static get template() { return html\`<style>
+        @font-face {
+          font-family: 'MyWebFont';
+          src: url('\${__createTemplateFromString(require(\\"./webfont.eot\\"))}'); /* IE9 Compat Modes */
+          src: url('\${__createTemplateFromString(require(\\"./webfont.eot\\"))}?#iefix') format('embedded-opentype'), 
+              url('\${__createTemplateFromString(require(\\"webfont.woff2\\"))}') format('woff2'), 
+              url('\${__createTemplateFromString(require(\\"./webfont.woff\\"))}') format('woff'), 
+              url('\${__createTemplateFromString(require(\\"./webfont.ttf\\"))}')  format('truetype'), 
+              url('\${__createTemplateFromString(require(\\"./webfont.svg\\"))}#svgFontName') format('svg'); /* Legacy iOS */
+        }
+        @media print {
+          * {background-color: transparent;}
+        }
+      </style>\`; }
+}
+customElements.define(FooElement.is, FooElement);
+
+function __createTemplateFromString(a) {
+  const template = /** @type {!HTMLTemplateElement} */(document.createElement('template'));
+  template.content.appendChild(document.createTextNode(a));
+  return template;
+}
+"
+`;
+
+exports[`loader styles have url() calls replaced with require statements 1`] = `
+"import {PolymerElement, html} from \\"@polymer/polymer/polymer-element.js\\";
+
+class FooElement extends PolymerElement {
+  static get is() { return \\"foo-element\\"; }
+  static get template() { return html\`<style>* {background-image: url('\${__createTemplateFromString(require(\\"./foo.jpg\\"))}');}</style>\`; }
+}
+customElements.define(FooElement.is, FooElement);
+
+function __createTemplateFromString(a) {
+  const template = /** @type {!HTMLTemplateElement} */(document.createElement('template'));
+  template.content.appendChild(document.createTextNode(a));
+  return template;
+}
+"
+`;
+
+exports[`loader styles malformed begin tag is skipped 1`] = `
+"import {PolymerElement, html} from \\"@polymer/polymer/polymer-element.js\\";
+
+class FooElement extends PolymerElement {
+  static get is() { return \\"foo-element\\"; }
+  static get template() { return html\`<style * {background-image: url(\\"foo.jpg\\");}\`; }
+}
+customElements.define(FooElement.is, FooElement);
+"
+`;
+
+exports[`loader styles missing end tag is skipped 1`] = `
+"import {PolymerElement, html} from \\"@polymer/polymer/polymer-element.js\\";
+
+class FooElement extends PolymerElement {
+  static get is() { return \\"foo-element\\"; }
+  static get template() { return html\`<style>* {background-image: url(\\"foo.jpg\\");}\`; }
+}
+customElements.define(FooElement.is, FooElement);
+"
+`;
+
+exports[`loader styles multiple style tags are processed 1`] = `
+"import {PolymerElement, html} from \\"@polymer/polymer/polymer-element.js\\";
+
+class FooElement extends PolymerElement {
+  static get is() { return \\"foo-element\\"; }
+  static get template() { return html\`<style>* {background-image: url('\${__createTemplateFromString(require(\\"./foo.jpg\\"))}');}</style>
+              <style>* {background-image: url('\${__createTemplateFromString(require(\\"./bar.jpg\\"))}');}</style>\`; }
+}
+customElements.define(FooElement.is, FooElement);
+
+function __createTemplateFromString(a) {
+  const template = /** @type {!HTMLTemplateElement} */(document.createElement('template'));
+  template.content.appendChild(document.createTextNode(a));
+  return template;
+}
+"
+`;
+
+exports[`loader styles simple styles are left alone 1`] = `
+"import {PolymerElement, html} from \\"@polymer/polymer/polymer-element.js\\";
+
+class FooElement extends PolymerElement {
+  static get is() { return \\"foo-element\\"; }
+  static get template() { return html\`<style>* {background-color: transparent;}</style>\`; }
+}
+customElements.define(FooElement.is, FooElement);
+"
+`;

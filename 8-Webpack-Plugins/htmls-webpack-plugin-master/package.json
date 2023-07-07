@@ -1,0 +1,35 @@
+{
+  "name": "htmls-webpack-plugin",
+  "version": "2.0.2",
+  "description": "A simple, fast, flexible and multiple html webpack plugin.",
+  "main": "lib/index.js",
+  "types": "lib/index",
+  "repository": "https://github.com/zaaack/htmls-webpack-plugin",
+  "author": "zaaack",
+  "license": "MIT",
+  "scripts": {
+    "test": "foy test",
+    "build": "foy build",
+    "preversion": "foy test && foy build && git add -A"
+  },
+  "files": [
+    "lib",
+    "src/index.ts"
+  ],
+  "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.35",
+    "foy": "^0.2.3",
+    "mocha": "^5.2.0",
+    "ts-node": "^8.0.2",
+    "tsconfig-paths": "^3.7.0",
+    "typescript": "^4.2.3",
+    "webpack": "^5.27.2"
+  },
+  "peerDependencies": {
+    "webpack": "^5"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1"
+  }
+}

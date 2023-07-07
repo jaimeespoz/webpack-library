@@ -1,0 +1,86 @@
+{
+  "name": "@mastilver/dynamic-cdn-webpack-plugin",
+  "version": "5.0.0",
+  "description": "Dynamically get your dependencies from a cdn rather than bundling them in your app",
+  "license": "MIT",
+  "repository": "https://github.com/mastilver/dynamic-cdn-webpack-plugin.git",
+  "author": {
+    "name": "Thomas Sileghem",
+    "email": "th.sileghem@gmail.com",
+    "url": "https://github.com/mastilver"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "xo && npm run test",
+    "test": "nyc tap test/**/*.test.js",
+    "lint": "xo",
+    "lint:fix": "xo --fix",
+    "version": "all-contributors generate",
+    "add-contributor": "all-contributors add"
+  },
+  "files": [
+    "index.js",
+    "src"
+  ],
+  "keywords": [
+    "webpack",
+    "cdn",
+    "unpkg.com",
+    "html-webpack-plugin",
+    "webpack-manifest-plugin",
+    "html",
+    "script",
+    "assets",
+    "externals"
+  ],
+  "dependencies": {
+    "read-pkg-up": "^7.0.1",
+    "resolve-pkg": "^2.0.0"
+  },
+  "peerDependencies": {
+    "module-to-cdn": "^3.1.5",
+    "webpack": ">=5"
+  },
+  "devDependencies": {
+    "all-contributors-cli": "^6.20.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mz": "^2.7.0",
+    "nyc": "^15.1.0",
+    "rimraf": "^3.0.2",
+    "tap": "^16.3.0",
+    "webpack": "^5.73.0",
+    "webpack-manifest-plugin": "5.0.0",
+    "xo": "^0.50.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 4,
+    "rules": {
+      "eqeqeq": "off",
+      "no-eq-null": "off",
+      "curly": "off",
+      "import/extensions": "off",
+      "node/file-extension-in-import": "off",
+      "unicorn/prefer-module": "off",
+      "unicorn/prefer-node-protocol": "off",
+      "unicorn/no-array-reduce": "off",
+      "unicorn/prefer-spread": "off",
+      "func-names": "off"
+    },
+    "ignores": [
+      "test/fixtures/**/*.js"
+    ]
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}

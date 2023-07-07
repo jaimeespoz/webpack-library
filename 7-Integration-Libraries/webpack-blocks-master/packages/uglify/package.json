@@ -1,0 +1,30 @@
+{
+  "name": "@webpack-blocks/uglify",
+  "version": "2.1.0",
+  "description": "Webpack block for UglifyJS",
+  "main": "index",
+  "license": "MIT",
+  "author": "Artem Sapegin <artem@sapegin.ru>",
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-blocks",
+    "uglify",
+    "uglifyjs"
+  ],
+  "repository": "andywer/webpack-blocks",
+  "bugs": "https://github.com/andywer/webpack-blocks/issues",
+  "dependencies": {
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {
+    "@webpack-blocks/core": "^2.1.0",
+    "webpack": "^4.20.2"
+  },
+  "peerDependencies": {
+    "@webpack-blocks/core": "^2.0.0"
+  }
+}
